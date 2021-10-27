@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "factures",
+  "info": {
+    "name": "facture",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "numero": {
+      "type": "string"
+    },
+    "accompte": {
+      "type": "string"
+    },
+    "statut": {
+      "type": "boolean"
+    },
+    "date": {
+      "type": "date"
+    },
+    "client": {
+      "type": "string"
+    },
+    "montantht": {
+      "type": "decimal"
+    },
+    "montantttc": {
+      "type": "decimal"
+    },
+    "tva": {
+      "type": "decimal"
+    },
+    "clients": {
+      "via": "factures",
+      "model": "client"
+    }
+  }
+}

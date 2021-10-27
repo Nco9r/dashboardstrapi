@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "devis",
+  "info": {
+    "name": "devi",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "numero": {
+      "type": "string"
+    },
+    "client": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "montantttc": {
+      "type": "decimal"
+    },
+    "montantht": {
+      "type": "decimal"
+    },
+    "tva": {
+      "type": "decimal"
+    },
+    "statut": {
+      "type": "boolean"
+    },
+    "pdf": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

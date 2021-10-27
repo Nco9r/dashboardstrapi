@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pistes",
+  "info": {
+    "name": "piste"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "client": {
+      "type": "string"
+    },
+    "service": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "prix": {
+      "type": "string"
+    }
+  }
+}

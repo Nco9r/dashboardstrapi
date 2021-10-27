@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contacts",
+  "info": {
+    "name": "contact"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "client": {
+      "type": "string"
+    },
+    "service": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "prix": {
+      "type": "string"
+    }
+  }
+}
